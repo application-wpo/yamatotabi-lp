@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逢香の大和旅 | 特別開催 書と語りで紡ぐ、大和の2日間</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "游明朝", "Yu Mincho", "Hiragino Mincho ProN", serif;
+            color: #2c2c2c;
+            line-height: 1.8;
+            background-image: url("images/bg.jpg");
+            background-repeat: repeat;
+            background-size: auto;
+            background-position: top left;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+　　　   ul {
+  　　      margin: 20px 0 20px 20px;
+            padding-left: 20px;
+        }
+
+         li {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            margin-bottom: 8px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+
+        .note {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.8;
+            margin-top: 30px;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/main.jpg') center/cover no-repeat;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .hero-content {
+            padding: 40px 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(139, 69, 19, 0.9);
+            color: #fff;
+            padding: 20px 60px;
+            font-size: 3.0rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 30px;
+            border-radius: 3px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .sub-catch {
+            font-size: 2.5rem;
+            letter-spacing: 0.12em;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .date-info {
+            font-size: 3.2rem;
+            margin-bottom: 50px;
+            letter-spacing: 0.08em;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background-color: #8b4513;
+            color: #fff;
+            padding: 24px 80px;
+            text-decoration: none;
+            font-size: 2.0rem;
+            letter-spacing: 0.1em;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            border: 2px solid #8b4513;
+        }
+
+        .btn-primary:hover {
+            background-color: #6d3510;
+            border-color: #6d3510;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+       
+
+        h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            letter-spacing: 0.12em;
+            font-weight: 500;
+            color: #1a4d2e;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: #8b4513;
+            margin: 20px auto 0;
+        }
+
+        .section-intro {
+            text-align: center;
+            font-size: 1.05rem;
+            max-width: 700px;
+            margin: 40px auto 60px;
+            line-height: 2;
+            color: #4a4a4a;
+        }
+
+        .highlight-box {
+            background-color: #f5f0e8;
+            padding: 60px 40px;
+            margin: 80px 0;
+            border-left: 5px solid #8b4513;
+        }
+
+        .highlight-box h3 {
+            font-size: 1.6rem;
+            margin-bottom: 30px;
+            color: #1a4d2e;
+            letter-spacing: 0.08em;
+        }
+
+        .highlight-box p {
+            font-size: 1.05rem;
+            line-height: 2;
+            margin-bottom: 15px;
+        }
+
+        .highlight-img {
+            margin: 30px 0;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .point-number {
+            display: inline-block;
+            background-color: #8b4513;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .schedule-grid {
+            display: grid;
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .schedule-day {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .schedule-day h3 {
+            font-size: 1.8rem;
+            color: #8b4513;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f5f0e8;
+        }
+
+        .schedule-item {
+            display: flex;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+
+        .schedule-time {
+            min-width: 110px;
+            font-weight: bold;
+            color: #1a4d2e;
+            font-size: 1.2rem;
+        }
+
+        .schedule-content {
+            flex: 1;
+            font-size: 1.00rem;
+        }
+
+        .profile-section {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 50px;
+            align-items: start;
+            margin-top: 60px;
+        }
+
+        .profile-img {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #1a4d2e;
+        }
+
+        .profile-title {
+            font-size: 1rem;
+            color: #8b4513;
+            margin-bottom: 25px;
+            letter-spacing: 0.05em;
+        }
+
+        .profile-text p {
+            font-size: 1rem;
+            line-height: 2;
+            margin-bottom: 12px;
+        }
+
+        .info-box {
+            background-color: #fff;
+            padding: 40px;
+            margin: 40px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .info-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: #1a4d2e;
+            display: flex;
+            align-items: center;
+        }
+
+        .info-box h3::before {
+            content: '●';
+            color: #8b4513;
+            margin-right: 12px;
+            font-size: 0.8rem;
+        }
+
+        .info-box p {
+            font-size: 1.05rem;
+            line-height: 2;
+            margin-bottom: 10px;
+        }
+
+        .step-list {
+            counter-reset: step-counter;
+            list-style: none;
+            margin-top: 40px;
+        }
+
+        .step-list li {
+            counter-increment: step-counter;
+            margin-bottom: 30px;
+            padding-left: 60px;
+            position: relative;
+            font-size: 1.05rem;
+        }
+
+        .step-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #8b4513;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+
+        .faq-list {
+            margin-top: 60px;
+        }
+
+        .faq-item {
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .faq-q {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #1a4d2e;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .faq-q::before {
+            content: 'Q.';
+            color: #8b4513;
+            margin-right: 12px;
+            font-size: 1.3rem;
+        }
+
+        .faq-a {
+            font-size: 1.05rem;
+            line-height: 2;
+            padding-left: 35px;
+            color: #4a4a4a;
+        }
+
+        .faq-a::before {
+            content: 'A.';
+            color: #8b4513;
+            margin-right: 12px;
+            font-weight: bold;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1a4d2e 0%, #2d5f3f 100%);
+            color: #fff;
+        }
+
+        .cta-section h2 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .cta-section h2::after {
+            background-color: #fff;
+        }
+
+        .cta-text {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            letter-spacing: 0.05em;
+        }
+
+        .notice-text {
+            font-size: 0.95rem;
+            margin: 30px 0;
+            opacity: 0.9;
+        }
+
+        .btn-cta {
+            display: inline-block;
+            background: #ffffff;  
+            color: #1a4d2e;
+            padding: 20px 70px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            border-radius: 4px;
+            transition: all 0.3s;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .btn-cta:hover {
+            background-color: #f5f0e8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #2c2c2c;
+            color: #ffffff;
+            padding: 60px 20px 30px;
+        }
+
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .footer-company {
+            margin-bottom: 40px;
+            font-size: 0.95rem;
+            line-height: 2;
+        }
+
+        .footer-company h3 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #f5f0e8;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        /*
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+        */
+footer .footer-links a {
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+footer .footer-links a:hover {
+    background: #ffffff;
+    color: #333333;
+    opacity: 1;
+}
+
+
+        .copyright {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #999;
+            padding-top: 30px;
+            border-top: 1px solid #444;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .sub-catch {
+                font-size: 1.1rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .highlight-box {
+                padding: 40px 20px;
+                margin: 50px 0;
+            }
+
+            .profile-section {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .schedule-day {
+                padding: 30px 20px;
+            }
+
+            .schedule-item {
+                flex-direction: column;
+            }
+
+            .schedule-time {
+                margin-bottom: 8px;
+            }
+
+            .info-box {
+                padding: 30px 20px;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+/* スマホ用 固定CTA */
+.fixed-cta {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .fixed-cta {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #8b4513;
+        padding: 15px;
+        text-align: center;
+        z-index: 9999;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .fixed-cta a {
+        display: block;
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: bold;
+        letter-spacing: 0.08em;
+        text-decoration: none;
+    }
+
+    /* 下に隠れないよう余白を確保 */
+    body {
+        padding-bottom: 80px;
+    }
+}
+
+/* 見どころ一覧（カード） */
+.highlight-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 320px));
+  gap: 30px;
+  margin: 60px auto;
+
+  justify-content: center;   /* ← 行全体を中央寄せ */
+}
+.highlight-card {
+  display: block;    
+  background-color: #fff8f0;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.5);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  width: 320px;
+  text-decoration: none;          /* ← 下線を消す */
+  color: inherit;                 /* ← 文字色を継承 */
+}
+
+.highlight-card:nth-child(6) {
+    background-color: #e6f0e6; /* 少しピンク寄りの柔らかい色で目立たせる */
+}
+
+.highlight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.highlight-card h4 {
+  font-size: 1.1rem;
+  color: #1a4d2e;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.highlight-card a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #8b4513;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.highlight-card a::after {
+  content: " ▶";
+}
+
+  html {
+      scroll-behavior: smooth;
+    }
+
+.detail-link {
+  display: inline-block;              /* ← 動かすため必須 */
+  margin-top: 12px;
+  font-weight: bold;
+  color: #e60023;                     /* 目立つ色（お好みで） */
+  text-decoration: none;
+  transition: 
+    transform 0.25s ease,
+    color 0.25s ease;
+}
+
+.detail-link:hover {
+  transform: translateX(6px);         /* → 右にスッ */
+  color: #b8001a;                     /* 少し濃く */
+}
+
+#price .info-box,
+#price .note {
+    padding-left: 60px;
+}
+
+.schedule-move {
+    margin-left: 110px;      /* ← ここがポイント */
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.schedule-move.bus {
+    color: #7a4b4b; /* 和・落ち着いた色 */
+}
+
+.schedule-move.walk {
+    color: #4b6a5a;
+}
+
+.move-arrow {
+    display: inline-block;
+    margin: 6px 0;
+    animation: arrow-down 1.5s ease-in-out infinite;
+}
+
+@keyframes arrow-down {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(6px); /* 下に少し */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+  .schedule-move {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+    font-size: 0.85rem;
+  }
+}
+
+.hotel-image {
+  margin: 16px 0 20px;
+  text-align: center;
+}
+
+.hotel-image img {
+  width: 100%;
+  max-width: 1000px;   /* ← containerと同程度に */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto;      /* 中央寄せ */
+}
+#profile .info-box {
+    background-color: #fafafa;
+}
+
+.price-large {
+  font-size: 2.5em; /* 数字を大きく表示 */
+  font-weight: bold; /* 太字にする */
+  
+}
+
+.site-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.site-title img {
+  display: block;
+  margin: 0 auto;
+}
+
+.collab-highlight {
+  color: #1a4d2e;          /* サイトのグリーン系 */
+  font-weight: bold;
+  font-size: 1.4em;       /* 少しだけ大きく */
+  letter-spacing: 0.08em;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero-content">
+            <div class="badge">特別開催</div>
+            <h1 class="site-title">
+             <img src="images/logo4.PNG" alt="逢香の大和旅">
+            </h1>
+            <p class="sub-catch">逢香の世界に、浸る。描く。語る。</p>
+            <p class="date-info">2026年4月3日（金）～4月4日（土） 2日間</p>
+            <a href="https://eventpay.jp/event_info/?shop_code=9917439183697529&EventCode=C699271669"
+   class="btn-primary"
+   target="_blank" rel="noopener"><strong>お申込みはこちら</strong></a>
+        </div>
+    </header>
+
+    <section id="concept">
+        <div class="container">
+            <h2>書と語りで紡ぐ、大和の二日間</h2>
+            <div class="section-intro">
+                <p>妖怪書家・逢香さんとともに、大和の地で過ごす特別な二日間。</p>
+                <p>墨と筆が織りなす世界を、直に体験し、語らい、深く味わう。</p>
+                <p>この旅でしか得られない出会いと学びが、ここにあります。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="highlights">
+        <div class="container">
+            <h2>ツアーの見どころ・特典</h2>
+<div class="highlight-list">
+
+  <a href="#point1" class="highlight-card">
+    <h4>本ツアー限定<br> <span class="collab-highlight">講師は逢香さん!</span><br>墨絵ワークショップ</h4>
+    <span class="detail-link">詳細はこちら</span>
+  </a>
+
+  <a href="#point2" class="highlight-card">
+    <h4> <span class="collab-highlight">逢香さん×<br>番組ディレクター</span><br>スペシャルトーク</h4>
+    <span class="detail-link">詳細はこちら</span>
+  </a>
+
+  <a href="#point3" class="highlight-card">
+    <h4> <span class="collab-highlight">参加者限定</span><br>特別グッズ</h4>
+    <span class="detail-link">詳細はこちら</span>
+  </a>
+
+  <a href="#point4" class="highlight-card">
+    <h4>御城印周遊企画<br>コンプリート!<br> <span class="collab-highlight">当ツアー限定<br>逢香さん<br>直筆メッセージ入り</span><br>スペシャル御城印プレゼント</h4>
+    <span class="detail-link">詳細はこちら</span>
+  </a>
+  
+
+  <a href="#point5" class="highlight-card">
+    <h4> <span class="collab-highlight">逢香さん奉納!</span><br>天狗の襖絵<br>特別見学</h4>
+    <span class="detail-link">詳細はこちら</span>
+  </a>
+  
+  <a href="#point6" class="highlight-card">
+    <h4>(宿泊オプション限定)<br> <span class="collab-highlight">逢香さん × 奈良交通</span>の<br>コラボトートバックプレゼント！</h4>
+    <span class="detail-link">詳細はこちら</span>
+  </a>
+
+
+</div>
+
+            
+            <div class="highlight-box" id="point1">
+                <h3><span class="point-number">1</span>本ツアー限定・特別開催 墨絵を書くワークショップ</h3>
+                <div class="highlight-img">
+                    <img src="images/workshop.jpg" alt="墨絵ワークショップの様子">
+                </div>
+                <p>逢香さんが直接指導する、墨絵ワークショップに参加いただけます。</p>
+                <p>筆の持ち方から、墨の濃淡の表現まで、丁寧にお教えいたします。初心者の方も安心してご参加ください。</p>
+                <p>完成した作品は、旅の思い出としてお持ち帰りいただけます。</p>
+            </div>
+
+            <div class="highlight-box" id="point2">
+                <h3><span class="point-number">2</span>番組ディレクターと逢香さんによるスペシャルトークイベント</h3>
+                <div class="highlight-img">
+                    <img src="images/talk1.jpg" alt="トークイベントの様子">
+                </div>
+                <p>NHK奈良「逢香の華やぐ大和」の番組制作秘話を、ディレクターと逢香さんが語ります。</p>
+                <p>撮影エピソードや、番組では語られなかった大和の魅力について、本ツアー参加者だけに特別にお話しいただきます。</p>
+                <p>質疑応答の時間もご用意しておりますので、直接お話を伺える貴重な機会です。</p>
+            </div>
+
+            <div class="highlight-box " id="point3">
+                <h3><span class="point-number">3</span>参加者限定の特別グッズ</h3>
+                <p>このツアーでしか手に入らない、逢香さんデザインの特別グッズをご用意しております。</p>
+                <p>旅の記念として、日常でお使いいただけるアイテムを厳選いたしました。</p>
+                <p><strong>※グッズの詳細は当日のお楽しみとさせていただきます。</strong></p>
+            </div>
+
+            <div class="highlight-box" id="point4">
+                <h3><span class="point-number">4</span>逢香さんコラボ！御城印周遊企画のコンプリート</h3>
+                <div class="highlight-img">
+                    <img src="images/yamazoe.jpg" alt="山添村の風景">
+                </div>
+                <p>当ツアーは御城印周遊企画ともタイアップ！</p>
+                <p>企画では4カ所周遊後、<h3><strong>逢香さんデザインのスペシャル御城印もらえます！</strong></h3></p>
+                <p>今回特別に、ツアー参加者限定の逢香さん直筆メッセージ入りスペシャル御城印をご用意します！</p>
+                
+            </div>
+
+            <div class="highlight-box" id="point5">
+                <h3><span class="point-number">5</span>ＰＶにもなった「天狗の襖絵」見学</h3>
+                <div class="highlight-img">
+                    <img src="images/hotel.jpg" alt="天狗の襖絵">
+                </div>
+                <p>1日目には、実相寺の見学も予定しております。</p>
+                <p>逢香さんが手掛け奉納された「天狗の襖絵」の見学が可能です。</p>
+                <p>映像で見たあの作品を是非生でご覧ください。</p>
+            </div>
+
+            <div class="highlight-box" id="point6">
+                <h3><span class="point-number">6</span>宿泊オプション限定！コラボトートバックプレゼント</h3>
+                <div class="highlight-img">
+                    <img src="images/tote.jpg" alt="トートバック">
+                </div>
+                <p>逢香さんとツアーで利用する奈良交通の奇跡のコラボ</p>
+                <p>力強い鹿が描かれたA4サイズが入る日常使いがしやすいトートバックです。</p>
+                <p>貴重な入手機会をお見逃しなく!</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="schedule">
+        <div class="container">
+            <h2>スケジュール概要</h2>
+            <div class="schedule-grid">
+                <div class="schedule-day">
+                    <h3>1日目 4月3日（金）</h3>
+                    <div class="schedule-item">
+                        <div class="schedule-time">12:30</div>
+                        <div class="schedule-content">　近鉄・大和西大寺駅（奈良市）集合・出発<br></div>
+                    </div>
+
+                    <div class="schedule-move bus"><span class="move-arrow">↓ バス🚌</span></div>
+
+                    <div class="schedule-item">
+                        <div class="schedule-time">13:00～17:30</div>
+                        <div class="schedule-content">　永楽庵にて逢香さんによる墨絵ワークショップ<br>　優しく丁寧に指導いたします<br>　その他、郡山城、実相寺見学</div>
+                    </div>
+
+                    <div class="schedule-move bus"><span class="move-arrow">↓ バス🚌</span></div>
+
+
+                    <div class="schedule-item">
+                        <div class="schedule-time">18:00</div>
+                        <div class="schedule-content">　天平ホテルチェックイン（オプション）</div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">18:15</div>
+                        <div class="schedule-content">　番組ディレクター＆逢香さんスペシャルトークイベント<br>　（会場：天平ホテル内）</div>
+                    </div>
+                </div>
+
+                <div class="schedule-day">
+                    <h3>2日目 4月4日（土）</h3>
+                    <div class="schedule-item">
+                        <div class="schedule-time">9:50</div>
+                        <div class="schedule-content">　近鉄・大和西大寺駅（奈良市）集合　（宿泊オプションご利用のお客様は9:30ホテル出発）</div>
+                    </div>
+
+                    <div class="schedule-move walk"><span class="move-arrow">↓ 徒歩🚶</span></div>
+
+
+                    <div class="schedule-item">
+                        <div class="schedule-time">10:00～12:00</div>
+                        <div class="schedule-content">　近鉄百貨店奈良店にて逢香さんの個展見学<br>　11:00～　逢香さんのトークイベント（作品紹介）<br>　その他、お土産購入など<br>　※昼食は各自お召し上がりください</div>
+                    </div>
+
+                    <div class="schedule-move bus"><span class="move-arrow">↓ バス🚌</span></div>
+
+
+                    <div class="schedule-item">
+                        <div class="schedule-time">13:00～13:30</div>
+                        <div class="schedule-content">　高取町観光案内所　夢創館<br>　高取城の復元CGの展示がございます。<br>　<strong>また、通常非公開のジオラマも当ツアー限定でご覧いただけます。</strong></div>
+                    </div>
+
+                    <div class="schedule-move bus"><span class="move-arrow">↓ バス🚌</span></div>
+
+
+                    <div class="schedule-item">
+                        <div class="schedule-time">14:30～15:30</div>
+                        <div class="schedule-content">　宇陀松山城<br>　徒歩約15分で山城の跡地に登っていただけます。</div>
+                    </div>
+
+                    <div class="schedule-move bus"><span class="move-arrow">↓ バス🚌</span></div>
+
+
+                    <div class="schedule-item">
+                        <div class="schedule-time">16:10～17:30</div>
+                        <div class="schedule-content">　長谷寺<br>　真言宗豊山派の総本山にお参りいただけます<br>　お参り後、スペシャル御城印のお渡しをさせていただきます。</div>
+                    </div>
+
+                    <div class="schedule-move bus"><span class="move-arrow">↓ バス🚌</span></div>
+
+
+                    <div class="schedule-item">
+                        <div class="schedule-time">18:45</div>
+                        <div class="schedule-content">　大和西大寺駅到着・解散</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="price">
+  <div class="container">
+    <h2>ご旅行代金</h2>
+
+    <div class="info-box">
+      <h3>基本旅行代金（2日間／お一人様あたり）</h3>
+      <ul>
+       <li class="price-large">36,000円</li>
+      </ul>
+
+      <p><strong>旅行代金に含まれるもの</strong></p>
+       <ul>
+         <li>行程に記載の施設の各入場料・拝観料</li>
+         <li>御城印周遊企画該当４施設の御城印・御朱印費用</li>
+         <li>ワークショップ体験費用（消耗品費含む）</li>
+         <li>貸切バス代金(二日間)</li>
+         <li>トークイベント参加費用（お茶菓子付き）</li>
+       </ul>
+    </div>
+
+    <div class="info-box">
+      <h3>宿泊オプション：天平ホテル（希望者のみ）</h3>
+       <p>
+       <strong style="font-size:1.3rem;">
+       当オプション参加者のみ！<br>
+       逢香さんと奈良交通のコラボトートバックをプレゼント
+       </strong>
+      </p>
+      <p><strong>天平ホテル宿泊追加料金（お一人様あたり/1泊朝食付き）</strong></p>
+      <ul>
+       <li>1名1室利用：22,000円</li>
+       <li>2名1室利用：16,000円</li>
+        <li>3名1室利用：15,000円</li>
+        <li>4名1室利用：15,000円</li>
+      </ul>
+      <p>※子ども料金は、上記大人料金から一律2,000円引きとなります。</p>
+      <p>※２日目、ホテルから大和西大寺駅へのタクシー費用含みます。</p>
+      <p>※当オプションは、本ツアー参加の方のみご利用いただけます。</p>
+      <p>※当オプションのお申込みは、本ツアーお申し込み後、ご予約確認メールの記載のURLよりお願いいたします。</p>
+    </div>
+
+    <p class="note">
+      
+      ※旅行代金は消費税込みの金額です。
+    </p>
+  </div>
+</section>
+
+     <div style="text-align:center; margin-top:40px;">
+      <a href="https://eventpay.jp/event_info/?shop_code=9917439183697529&EventCode=C699271669"
+   class="btn-primary"
+   target="_blank" rel="noopener">
+         お申込みはこちら
+      </a>
+     </div>
+    
+
+    <section id="accommodation">
+        <div class="container">
+            <h2>宿泊について</h2>
+            <div class="info-box">
+                <h3>宿泊ホテル</h3>
+                <div class="hotel-image">
+                <img src="images/room.jpg" alt="天平ホテル 部屋">
+                </div>
+                <p><strong>天平ホテル</strong>（奈良市・猿沢池沿い）</p>
+                <p>猿沢池のほとりに佇む、静かで落ち着いた和モダンな雰囲気のホテルです。</p>
+                <p>日本初の「書」がコンセプトのホテル、宿泊しながら奈良の「歴史」「文化」「風土」を体感できます。</p>
+                <p>興福寺や奈良公園へ徒歩でアクセスでき、奈良観光の拠点として最適な立地。</p>
+                <p>自由時間には、ぜひ周辺の散策をお楽しみください。</p>
+                <p>宿泊者には、逢香さんと奈良交通のコラボトートバックをプレゼントいたします。</p>　　　　　　　　
+            </div>
+        </div>
+    </section>
+
+<section id="summary">
+    <div class="container">
+        <h2>ツアー概要・ご案内事項</h2>
+
+        <div class="info-box">
+            <h3>旅行代金に含まれないもの</h3>
+            <p>・集合場所までの交通費</p>
+            <p>・食事代金</p>
+            <p>・個人的なお土産代</p>
+        </div>
+
+        <div class="info-box">
+            <h3>添乗員・移動手段について</h3>
+            <p><strong>添乗員：</strong>行程表記載の全行程同行いたします。</p>
+            <p><strong>利用予定交通機関：</strong>貸切バス（奈良交通:セーフティーバス　3つ星）</p>
+        </div>
+
+        <div class="info-box">
+            <h3>宿泊施設(オプション)について</h3>
+            <p><strong>利用予定宿泊施設：</strong>天平ホテル（奈良市）</p>
+        </div>
+
+        <div class="info-box">
+            <h3>募集条件について</h3>
+            <p><strong>募集締切：</strong>2026年3月27日（金）<br>
+  　　　　　  ※定員に達し次第、募集を締め切らせていただきます。</p>
+            <p><strong>募集人数：</strong>40名様</p>
+            <p><strong>最少催行人員：</strong>15名</p>
+            <p>
+                最少催行人員に満たない場合、本ツアーは中止となる場合がございます。<br>
+                その際は <strong>2026年3月19日（木）まで</strong> にご連絡いたします。
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <section id="profile">
+        <div class="container">
+            <h2>講師紹介</h2>
+            <div class="info-box">
+            <div class="profile-section">
+                <div class="profile-img">
+                    <img src="images/profile.jpg" alt="逢香さんプロフィール写真">
+                </div>
+                <div class="profile-text">
+                    <h3>逢香（おうか）</h3>
+                    <p class="profile-title">妖怪書家・書家</p>
+                    <p>奈良在住。奈良教育大学書道科卒業。</p>
+                    <p>書道を専門に水墨画・妖怪画作品を制作。</p>
+                    <p>「黒い妖怪ウォッチシリーズ」のキャラクター・タイトルデザインを担当。</p>
+                    <p>世界遺産・元興寺、金峯山寺、橿原神宮などで作品奉納・書道パフォーマンスを実施。</p>
+                    <p>NHK奈良「逢香の華やぐ大和」出演・美術担当。</p>
+                    <p>奈良市観光大使。一般社団法人モノモン代表。</p>
+                    <p>独自の感性で、伝統的な書の世界と現代的な表現を融合させ、多くの人々を魅了している。</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="flow">
+        <div class="container">
+            <h2>ご参加までの流れ</h2>
+            <div class="info-box">
+            <ol class="step-list">
+                <li>下記の申込みボタンより、専用ページへお進みください。</li>
+                <li>必要事項をご記入の上、お申込みください。<br><small>※残席状況は申込ページにてご確認いただけます。</small></li>
+                <li>お申込み受付後、3営業日以内に担当者よりメールにてご連絡いたします。</li>
+                <li>旅行代金のお支払い方法をご案内いたします。</li>
+                <li>ご入金確認後、出発の2週間前を目途に最終のご案内をお送りいたします。</li>
+            </ol>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container">
+            <h2>よくあるご質問</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-q">書道の経験がありませんが、ワークショップに参加できますか？</div>
+                    <div class="faq-a">はい、もちろんご参加いただけます。初心者の方にも丁寧に指導いたしますので、安心してご参加ください。墨絵の美しさを体験していただくことを大切にしております。使い慣れた筆がある方はご持参くださいませ。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">遠方からの参加を考えていますが、交通手段はどうすればよいですか？</div>
+                    <div class="faq-a">個別に新幹線や飛行機等のご相談を承ることは可能です。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">一人での参加も可能でしょうか？</div>
+                    <div class="faq-a">はい、お一人様でのご参加も大歓迎です。同じ興味を持つ方々との出会いも、このツアーの魅力のひとつです。お一人様追加代金については、お申込みページにてご確認ください。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">キャンセルする場合、キャンセル料はかかりますか？</div>
+                    <div class="faq-a">はい、出発日からの日数に応じてキャンセル料が発生いたします。詳細は旅行条件書に記載しておりますので、お申込み前に必ずご確認ください。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q">宿泊の荷物を先にホテルに送ることはできますか？</div>
+                    <div class="faq-a">ホテルではツアー前にお荷物をお預けいただけます。詳細はオプションのご予約確定後にご案内いたします。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="application" class="cta-section">
+        <div class="container">
+            <h2>お申込み・お問い合わせ</h2>
+            <p class="cta-text">特別な二日間を、ご一緒しませんか。</p>
+            <p class="notice-text">※残席状況は申込ページにてご確認ください。</p>
+            <a href="https://eventpay.jp/event_info/?shop_code=9917439183697529&EventCode=C699271669"
+   class="btn-cta"
+   target="_blank" rel="noopener">お申込みページへ進む</a>
+            <p style="margin-top: 40px; font-size: 0.95rem;">お電話でのお問い合わせも承っております。<br>お気軽にご連絡ください。</p>
+        </div>
+    </section>
+
+
+
+    <footer>
+  <div class="footer-content">
+    <div class="footer-company">
+      <h3>旅行企画・実施</h3>
+      <p>株式会社ワールドプランニングオフィス</p>
+      <p>東京都知事登録旅行業２－２８２２号</p>
+      <p>〒160-0022 東京都新宿区新宿1-28-3　TSG御苑ビル5F</p>
+      <p>TEL: 03-3354-9995（受付時間 9:30～18:00 土日祝除く）</p>
+      <p>総合旅行業務取扱管理者：仁藤　隆彦</p>
+      <p>当ツアー担当者：山本／栗山</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="http://www.wpo-net.co.jp/company/" target="_blank" rel="noopener">
+        会社概要
+      </a>
+      <a href="http://www.wpo-net.co.jp/privacy/" target="_blank" rel="noopener">
+        プライバシーポリシー
+      </a>
+      <a href="http://www.wpo-net.co.jp/contact/" target="_blank" rel="noopener">
+        お問い合わせ
+      </a>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2026 WORLD PLANNING OFFICE Co., Ltd. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- スマホ用 固定CTA -->
+<div class="fixed-cta">
+  <a href="https://eventpay.jp/event_info/?shop_code=9917439183697529&EventCode=C699271669"
+     target="_blank" rel="noopener">
+    お申込みはこちら
+  </a>
+</div>
+
+
+</body>
+</html>
